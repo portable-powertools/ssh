@@ -1,0 +1,2 @@
+mkdir -p "$HOME/touchstone/local/where/ssh-dyncfg"
+tshere --base "$HOME/.ssh" "$mod_ssh_root/unmanaged/config" config

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+shopt -s globstar
+echo refreshing ssh cfg in %local/ssh/dyncfg
+
+envscat --newline "$HOME/touchstone/local/where/ssh-dyncfg"/**/config_* > "$mod_ssh_root/unmanaged/config"
+tshere "$mod_ssh_root/unmanaged/config" ssh-dyncfg/config
